@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--author: Fizza imaran -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1 style="color: white; text-shadow: 4px 2px 0 #7A7A7A; 
+        text-align: center; padding-top: 20px;">Pick a kitten</h1>
+       
+        <ul id="thumbnails">
+
+            <li><img src="images/cute-photos-of-cats-in-grass-1593184777.jpg" 
+                title="Cookie & Cream"
+                alt="Name:Cookie, Cream (Twins). 
+                Age: 1 year old. Gender: female  
+                Favourite food: cookie: chicken nugests, cream: canned tuna.
+                Favourite game: ball, hide and seek 
+                About:Cookie & Cream love playing with each other."
+                id="one" class="image" ></li>
+        
+            <li><img src="images/cute-photos-of-cats-excited-1593184777.jpg" 
+                title="Midnight"
+                alt="Name:Midnight. Age: 5 year old. Gender: male. 
+                Favourite food: Salmon.
+                Favourite game: chasing 
+                About: Mignight likes to go out and chase squrils"
+                id="two" class="image" ></li>
+          
+            <li><img src="images/cute-photos-of-cats-lion-1593184780.jpg" 
+                title="Simba"
+                alt="Name:Simba. Age: 10 year old. Gender: male 
+                Favourite food: canned tuna.
+                Favourite game: ping pong ball
+                About: Simba thinks he is a Lion, he loves scaring people off"
+                id="three" class="image" ></li>    
+          
+            <li><img src="images/download.jpg" 
+                title="Chesse"
+                alt="Name:chesse. Age: 7 year old. Gender: female  
+                Favourite food: chicken nugests.
+                Favourite game: ball
+                About: Chesse loves wearing new bows and collars, she is a materail girl!"
+                id="four" class="image"></li>
+          
+        </ul>
+    <br>
+    <main id="ImageDisplay"> 
+        <img id="current" style="height:300px ; width:400px" 
+        src="images/cute-photos-of-cats-in-grass-1593184777.jpg"
+        alt="Name:Cookie, Cream (Twins). 
+        Age: 1 year old. Gender: female  
+        Favourite food: cookie: chicken nugests, cream: canned tuna.
+        Favourite game: ball, hide and seek 
+        About:Cookie & Cream love playing with each other.">
+    </main>
+    <br>
+    <h3 id="title"></h3>
+    <br>
+    <p id="discription"></p>
+
+</div>
+        <script>
+
+
+            document.getElementById("container").addEventListener('mouseover',function(e){
+               
+                if(e.target.tagName == 'IMG'){
+                    
+                    document.getElementById("current").src = e.srcElement.src; 
+
+                    var h3 = document.getElementById("title").title = e.srcElement.title; 
+                    document.getElementById("title").innerHTML = h3
+
+                    var p = document.getElementById("discription").alt= e.srcElement.alt; 
+                    document.getElementById("discription").innerHTML = p
+                }
+            },false)
+
+      
+        </script>
+
+
+</body>
+</html>
