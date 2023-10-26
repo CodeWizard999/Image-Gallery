@@ -3,7 +3,7 @@ Welcome to the purrfect world of cute cats! This image gallery project showcases
 This is a simple image gallery project that displays a set of four cat images along with their details. Users can hover over each image to see its title and description.
 
 # Usage
-The project can be accessed through the following link: http://imranfi.dev.fast.sheridanc.on.ca/GitHub/FIZZA_IMRAN-A3-WEB/index.html.
+The project can be accessed through the following link: https://codewizard999.github.io/Image-Gallery/
 
 Alternatively, users can download the index.html file and open it in a web browser.
 
